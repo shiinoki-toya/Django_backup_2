@@ -14,19 +14,16 @@ from pathlib import Path
 import logging
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-*6^b_9ztmlefnjk8_2+e+0@jfw0z7p%xeu#nkjj33hob2km#!c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -78,15 +75,7 @@ WSGI_APPLICATION = 'sc_site.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default':{
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Django',
-        'USER': 'Django_server',
-        'PASSWORD': 'Sb3*&!Y|',
-        'HOST': '192.168.101.137',
-    }
-}
+
 
 #DATABASE_ROUTERS = ['sc_app.routers.Router']
 
